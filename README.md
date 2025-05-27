@@ -36,11 +36,6 @@ DB 연동시(뒷부분에서 추가 예정)
 12. 게시글 수정 메서드 구현
 13. 게시글 수정 화면 구현
 14. 게시글 삭제하기
-15. 파일첨부 메서드 구현
-16. 파일조회 메서드 구현
-17. 파일첨부 화면 구현, WebConfig 클래스 정의
-18. 다중 파일첨부 메서드 구현
-19. 다중 파일첨부 화면 구현
 
 ## table 정의
 ```sql
@@ -55,16 +50,5 @@ DB 연동시(뒷부분에서 추가 예정)
     boardContents varchar(500),
     boardHits int default 0,
     createdAt datetime default now(), 
-    fileAttached int default 0
+   
 );
--- board_file_table
-drop table if exists board_file_table;
-create table board_file_table
-(
-    id	bigint auto_increment primary key,
-    originalFileName varchar(100),
-    storedFileName varchar(100),
-    boardId bigint,
-    constraint fk_board_file foreign key(boardId) references board_table(id) on delete cascade
-);
-```
