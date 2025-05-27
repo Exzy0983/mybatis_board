@@ -2,10 +2,10 @@
 스프링부트로 게시판 만들어보기
 
 ## 개발환경
-- IntelliJ IDEA Community Edition 2023.3.3
+- IntelliJ IDEA Ultimate Edition 2025.1.1.1
 - Amazon Corretto 21
-- mysql community server 8.0
-- spring boot 3.1.8
+- mysql community server 8.0.42
+- spring boot 3.4.6
 - mybatis framework
 - thymeleaf
 
