@@ -49,6 +49,6 @@ DB 연동시(뒷부분에서 추가 예정)
     boardPass varchar(20),
     boardContents varchar(500),
     boardHits int default 0,
-    createdAt datetime default now(), 
+    createdAt datetime default now()
    
 );
